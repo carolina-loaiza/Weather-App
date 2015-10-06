@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Weather App</title>
+  </head>
+  <body class="background">
+		<h1>How's the Weather Today?</h1>
+    <ul id="weather-list">
+    </ul>
+	  <button class="btn location-info" onclick="WeatherApp.showFrom()">Choose Location</button>
+		<form id="userForm" class="user_option hidden" action="#" method="get">
+			<input type="text" id="city" value="" placeholder="City"><span>,</span>
+			<input type="text" id="country" value="" placeholder="Country">
+			<button id="save" class="btn save-info" onclick="WeatherApp.getClick();WeatherApp.showFrom()"><i class="fa fa-search"></i></button> 
+		</form>
+		<script type="text/javascript" src="js/jss.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+	</body>
+</html>

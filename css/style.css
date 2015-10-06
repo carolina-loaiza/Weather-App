@@ -1,0 +1,319 @@
+@import url(http://fonts.googleapis.com/css?family=Sansita+One);
+@import url(http://fonts.googleapis.com/css?family=Andika);
+
+@font-face {
+	font-family: "iconvault";
+	src: url("../fonts/iconvault_forecastfont.eot");
+	src: url("../fonts/iconvault_forecastfont.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/iconvault_forecastfont.woff") format("woff"),
+		url("../fonts/iconvault_forecastfont.ttf") format("truetype"),
+		url("../fonts/iconvault_forecastfont.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  margin: 0; 
+	background-color: #3598DB;
+  background-image: url(../img/city-pattern.png);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+h1 {
+	font-family: 'Sansita One', cursive;
+  color: transparent;
+  background: url(../img/weather-logo.png);
+  width: 275px;
+  height: 121px;
+	text-align: center;
+  margin: 15% auto;
+}
+
+form {
+  width: 90%;
+  padding-bottom: 10%;
+	margin: 0 auto;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  font-size: 20px;
+  color: #fff;
+  width: 38%;
+  font-family: 'Andika', sans-serif;
+}
+
+input::-webkit-input-placeholder
+{
+  color: #fff;
+}
+
+input:focus, input:active{
+  outline-style:none;
+  box-shadow:none;
+}
+
+button:focus {
+  outline:0;
+}
+
+p {
+  font-family: 'Andika', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+}
+
+form span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: -webkit-baseline-middle;
+  padding: 0 5px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.hidden{
+  display: none;
+}
+
+.weather-content {
+	background-color: #fff;
+	width: 185px;
+	padding: 15px;
+  border-radius: 4px;
+  list-style: none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 6px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 6px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.actual-weather {
+  text-align: center;
+  margin-top: 170px;
+}
+
+.description-weather {
+  text-align: center;
+}
+
+.btn {
+  color: #3598DB;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 12px;
+  -webkit-box-shadow: 2px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  -webkit-box-shadow: 2px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.location-info{
+  margin: 5% auto;
+  display: block;
+}
+
+.save-info {
+  padding: 0 0 5px 0;
+  width: 38px;
+  height: 32px;
+  margin-left: 8px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.fa-search {
+  font-weight: bold;
+}
+
+.weather-days-content {
+  margin-top: 15%;
+}
+
+.weather-days-content li{
+  display: inline-block;
+  width: 29%;
+}
+
+.weather-days-content .icon{
+  font-size: 3em;
+}
+
+.weather-days-content p{
+  text-align: center;
+  color: #999;
+}
+
+.weather-days-content .center {
+  border-left: solid 2px #999;
+  border-right: solid 2px #999;
+  padding: 0 2%;
+  margin: 0 2%;
+}
+
+.days-weather {
+  margin-top: 54px;
+  font-size: 14px;
+}
+
+/* ----------------------------------------Forecast Font class-------------------------------------------- */
+
+/* -----Base Icon----- */
+.icon {
+  font-family: 'iconvault';
+  font-size: 10em;
+}
+
+/* -----Basecloud----- */
+
+.basecloud::after {
+  content: '\f105';
+  color: rgb(204, 204, 204);
+  position:absolute;
+}
+
+/* -----Basecloud----- */
+
+.basethundercloud::before {
+  content: '\f105';
+  position: absolute;
+  color: #000;
+}
+
+/* -----Sun----- */
+
+.icon-sun::after {
+  content: "\f113";
+  color: rgb(255, 165, 0);
+  position: absolute;
+  padding: 0 3%;
+}
+
+.weather-days-content .icon-sun::after {
+  padding: 0 1%;
+}
+
+/* -----Sunny----- */
+
+.icon-sunny::after {
+  content: "\f101";
+  color: rgb(255, 165, 0);
+  position: absolute;
+}
+
+/* -----Sunny with----- */
+
+.icon-sunny-with::before {
+  content: "\f101";
+  color: rgb(255, 165, 0);
+  position: absolute;
+}
+
+/* -----Moon----- */
+
+.icon-moon::after {
+  content: "\f10d";
+  color: rgb(255, 165, 0);
+  position: absolute;
+  padding: 0 10px;
+}
+
+/* -----Night----- */
+
+.icon-night::after {
+  content: "\f100";
+  position: absolute;
+  color: rgb(255, 165, 0);
+}
+
+/* -----Night----- */
+
+.icon-night-with::before {
+  content: "\f100";
+  position: absolute;
+  color: rgb(255, 165, 0);
+}
+
+/* -----Clound----- */
+
+.icon-cloud::after {
+  content: "\f106";
+  color: rgb(204, 204, 204);
+  position: absolute;
+}
+
+/* -----Clound only----- */
+
+.icon-cloud-only::after {
+  content: "\f106";
+  color: rgb(204, 204, 204);
+  position: absolute;
+  padding: 0 10px;
+}
+
+/* -----Broken clound----- */
+
+.icon-broken-cloud::after {
+  content: "\f106";
+  color: rgb(133, 131, 131);
+  position: absolute;
+  padding: 0 10px;
+}
+
+/* -----Broken raining----- */
+
+.basecloud-broken::after {
+  content: '\f105';
+  color: rgb(130, 131, 131);
+  position:absolute;
+}
+
+/* -----Rainig----- */
+
+.icon-rainy::before {
+  content: "\f107";
+  position: absolute;
+  color: #4681c3;
+}
+
+/* -----Thunder----- */
+
+.icon-thunder::before {
+  content: "\f114";
+  position: absolute;
+  color: rgb(255, 165, 0);
+}
+
+/* -----Snowing----- */
+
+.icon-snowy::before {
+  content: "\f10b";
+  position: absolute;
+  color: #acd3f3;
+}
+
+/* -----Mist----- */
+
+.icon-mist:before {
+  content: '\f108';
+  color: rgb(204, 204, 204);
+  position: absolute;
+  padding: 0 10px;
+}
